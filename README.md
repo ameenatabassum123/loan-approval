@@ -20,21 +20,6 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
-
-**requirements.txt (example)**
-
-```
-streamlit
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-joblib
-lime
-xgboost
-```
 
 
 ##  Data
@@ -55,7 +40,7 @@ xgboost
 * **Visualization** (bar/line charts after button click)
 * **Optional LIME explanation**
 
----
+
 
 ##  Run the Streamlit App
 
@@ -72,7 +57,7 @@ Features:
 * Visuals update only after prediction
 * Explainability (optional, with LIME)
 
----
+
 
 ## Evaluation
 
@@ -83,9 +68,9 @@ Metrics computed during training inside the file:
 * ROC‑AUC
 * Confusion matrix (optional)
 
----
 
-## ❗ Common Pitfalls
+
+## Common Pitfalls
 
 **Feature mismatch error** → always train + save a `pipeline.pkl`, then load in inference.
 
@@ -99,7 +84,6 @@ pipeline = joblib.load("model.pkl")
 
 **Charts not updating** → place plotting code inside button callback.
 
----
 
 ## Deploy
 
@@ -107,7 +91,6 @@ pipeline = joblib.load("model.pkl")
 2. On Streamlit Cloud → New app → choose `app.py`
 3. Ensure `requirements.txt` is present
 
----
 
 ##  Contact
 
